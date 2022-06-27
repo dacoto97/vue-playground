@@ -9,9 +9,15 @@
     ],
     "types": [
       "cypress"
-    ]
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "../../src/*"
+      ]
+    }
   },
   "include": [
-    "./specs/**/*"
+    "./**/*.cy.ts"
   ]
 }

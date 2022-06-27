@@ -1,15 +1,16 @@
 {
-  "extends": "@vue/tsconfig/tsconfig.web.json",
   "compilerOptions": {
+    "sourceMap": true,
+    "lib": [
+      "esnext",
+      "dom"
+    ],
     "baseUrl": ".",
     "paths": {
       "@/*": [
         "./src/*"
       ]
-    },
-    "types": [
-      "node"
-    ]
+    }
   },
   "include": [
     "vite.config.*",
@@ -18,7 +19,5 @@
     "src/**/*.tsx",
     "src/**/*.vue"
   ],
-  "exclude": [
-    "./node_modules"
-  ]
+  "extends": "@vue/tsconfig/tsconfig.json"
 }
